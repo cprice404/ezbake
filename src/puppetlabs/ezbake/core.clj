@@ -497,6 +497,9 @@ Dependency tree:
   [_ lein-project build-target]
   (let [template-dir (get-template-file build-target)
         uberjar-name (:uberjar-name lein-project)]
+    (println "About to call uberjar, project:")
+    (clojure.pprint/pprint lein-project)
+    (println "\n\n")
     (uberjar/uberjar lein-project)
     (fs/copy+ (format "%s/%s" "target" uberjar-name)
               (format "%s/%s" staging-dir uberjar-name))

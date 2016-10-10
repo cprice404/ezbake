@@ -1,4 +1,4 @@
-(defproject puppetlabs/lein-ezbake "1.0.0"
+(defproject puppetlabs/lein-ezbake "1.0.0-DEBUG-UBERNPE-SNAPSHOT"
   :description "A system for building packages for trapperkeeper-based applications"
   :url "https://github.com/puppetlabs/ezbake"
   :license {:name "Apache License 2.0"
